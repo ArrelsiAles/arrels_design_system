@@ -1,0 +1,19 @@
+{
+  "name": "arrels-design-system",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "postbuild": "node scripts/prepare-sites-build.mjs",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@lucide/astro": "^1.26.0",
+    "astro": "^5.18.2",
+    "typescript": "^6.0.3"
+  }
+}
