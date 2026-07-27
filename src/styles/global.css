@@ -186,7 +186,7 @@
   --accent: #f08caf;
   --accent-strong: #ffd2e1;
   --accent-soft: #482238;
-  --on-accent: #170a10;
+  --on-accent: #ffffff;
   --success: #63c39d;
   --success-soft: #18382d;
   --warning: #e0a75e;
@@ -529,7 +529,7 @@ svg {
   box-shadow: 0 2px 7px rgb(var(--shadow-color) / 8%);
 }
 
-[data-route="future-rose"][data-mode="light"] .button.primary {
+[data-route="future-rose"] .button.primary {
   text-shadow: 0 1px 2px rgb(78 13 44 / 35%);
 }
 
@@ -1596,6 +1596,25 @@ main {
   height: 18px;
   margin: 0;
   accent-color: var(--accent);
+}
+
+[data-route="future-rose"] .control-list input[type="checkbox"]:not(.switch),
+[data-route="future-rose"] .task-checklist input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--surface-raised);
+  border: var(--stroke) solid var(--border-strong);
+  border-radius: 5px;
+}
+
+[data-route="future-rose"] .control-list input[type="checkbox"]:not(.switch):checked,
+[data-route="future-rose"] .task-checklist input[type="checkbox"]:checked {
+  background-color: var(--accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='m4 9 3.2 3.2L14 5.8' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.2'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-color: var(--accent);
 }
 
 .switch-row {
