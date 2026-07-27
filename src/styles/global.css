@@ -215,6 +215,7 @@
 }
 
 html {
+  overflow-x: clip;
   scroll-behavior: smooth;
   scroll-padding-top: 104px;
   color: var(--text);
@@ -228,7 +229,7 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 button,
@@ -1305,6 +1306,7 @@ main {
 
 .type-specimen {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   margin-top: 34px;
 }
 
@@ -2053,6 +2055,8 @@ td:last-child button {
 
 .visually-hidden {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -3786,7 +3790,7 @@ td:last-child button {
 
   .foundation-grid,
   .component-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .admin-shell {
@@ -3859,7 +3863,8 @@ td:last-child button {
   }
 
   .admin-shell {
-    grid-template-columns: minmax(760px, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+    overflow: hidden;
   }
 
   .admin-sidebar {
@@ -3970,6 +3975,14 @@ td:last-child button {
     grid-template-columns: 1fr;
   }
 
+  .type-specimen > strong {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+  .type-specimen code {
+    overflow-wrap: anywhere;
+  }
+
   .radius-specimen {
     grid-template-columns: 1fr;
   }
@@ -3985,6 +3998,43 @@ td:last-child button {
 
   .component-row .icon-button {
     width: 100%;
+  }
+
+  .admin-topbar {
+    gap: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .admin-search {
+    display: none;
+  }
+
+  .admin-content {
+    padding: 20px 14px;
+  }
+
+  .page-heading {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .page-heading > .button {
+    width: 100%;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .data-card-header,
+  .table-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .inline-alert {
