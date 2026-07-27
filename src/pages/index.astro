@@ -28,6 +28,8 @@ import {
 } from "@lucide/astro";
 import "../styles/global.css";
 
+const assetBase = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 const navigation = [
   { href: "#identity", label: "Identitat", icon: HeartHandshake },
   { href: "#foundations", label: "Foundations", icon: Grid2x2 },
@@ -265,7 +267,7 @@ const schedule = [
                 </div>
               </div>
               <img
-                src="/logo-concepts/concept-01c-original-elders-heart.png"
+                src={`${assetBase}/logo-concepts/concept-01c-original-elders-heart.png`}
                 width="1920"
                 height="819"
                 alt="El cor de l’origen amb dues persones majors dins unes mans en forma de cor"
@@ -282,7 +284,7 @@ const schedule = [
                 </div>
               </div>
               <img
-                src="/logo-concepts/concept-02-original-elders-circle.png"
+                src={`${assetBase}/logo-concepts/concept-02-original-elders-circle.png`}
                 width="1918"
                 height="820"
                 alt="El cercle de l’origen amb dues persones majors protegides per unes mans dins un cercle"
@@ -308,7 +310,7 @@ const schedule = [
           <div class="negative-usage-grid">
             <figure class="negative-mark-preview">
               <img
-                src="/logo-variants/el-cor-de-l-origen-negative-pink.png"
+                src={`${assetBase}/logo-variants/el-cor-de-l-origen-negative-pink.png`}
                 width="1254"
                 height="1254"
                 alt="Versió negativa d’El cor de l’origen en blanc sobre rosa"
