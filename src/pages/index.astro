@@ -690,8 +690,8 @@ const schedule = [
               <h2 id="key-screens-title">Més enllà de la portada.</h2>
             </div>
             <p>
-              Cinc pantalles del roadmap posen a prova el sistema en moments
-              reals: planificar, validar, organitzar rutes, executar i informar.
+              Onze pantalles del roadmap posen a prova el sistema en moments
+              reals: planificar, validar, comunicar, executar i informar.
             </p>
           </div>
 
@@ -969,6 +969,300 @@ const schedule = [
                     <button class="button primary wide" type="button"><MessageCircle size={16} /> Contactar coordinació</button>
                     <small>Resposta dins l'horari d'atenció.</small>
                   </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen-example screen-example-wide" id="internal-chat">
+              <header class="screen-example-heading">
+                <div>
+                  <span>06 · Equip intern</span>
+                  <h3>Comunicació operativa</h3>
+                  <p>Missatges normals i objectes de feina compartits dins una conversa traçable.</p>
+                </div>
+                <span class="badge success"><MessageCircle size={13} /> 3 en línia</span>
+              </header>
+
+              <div class="desktop-chat-preview">
+                <aside class="chat-rail">
+                  <header>
+                    <div>
+                      <span>Converses</span>
+                      <strong>Comunicació interna</strong>
+                    </div>
+                    <button class="icon-button" type="button" aria-label="Nova conversa"><Plus size={16} /></button>
+                  </header>
+                  <label class="chat-search">
+                    <Search size={14} />
+                    <input type="search" aria-label="Cercar converses" placeholder="Cercar equip o servei" />
+                  </label>
+                  <div class="conversation-list">
+                    <button class="active" type="button">
+                      <span class="avatar">MC</span>
+                      <span><strong>Coordinació · Centre</strong><small>He compartit el pla de demà</small></span>
+                      <time>10:24</time>
+                    </button>
+                    <button type="button">
+                      <span class="avatar">E4</span>
+                      <span><strong>Equip SAD · Nord</strong><small>Ruta actualitzada</small></span>
+                      <i>2</i>
+                    </button>
+                    <button type="button">
+                      <span class="avatar">RH</span>
+                      <span><strong>Administració · RRHH</strong><small>Documentació disponible</small></span>
+                      <time>Ahir</time>
+                    </button>
+                  </div>
+                </aside>
+
+                <section class="chat-workspace">
+                  <header class="chat-workspace-header">
+                    <div class="chat-person">
+                      <span class="avatar">MC</span>
+                      <span><strong>Maria · Coordinació</strong><small><i></i> En línia · Zona Centre</small></span>
+                    </div>
+                    <div>
+                      <button class="icon-button" type="button" aria-label="Cercar dins la conversa"><Search size={16} /></button>
+                      <button class="icon-button" type="button" aria-label="Més opcions"><Ellipsis size={17} /></button>
+                    </div>
+                  </header>
+
+                  <div class="chat-thread">
+                    <span class="thread-date">Avui</span>
+                    <div class="chat-message incoming">
+                      <p>Bon dia, Marta. He revisat els canvis de demà i et proposo aquest pla.</p>
+                      <time>10:18</time>
+                    </div>
+                    <article class="shared-work-card">
+                      <header>
+                        <span class="shared-object-icon"><CalendarDays size={17} /></span>
+                        <span><small>Planificació compartida</small><strong>Pla de visites · Dimarts 28</strong></span>
+                        <span class="badge info">Proposta</span>
+                      </header>
+                      <div class="shared-work-metrics">
+                        <span><small>Visites</small><strong>4</strong></span>
+                        <span><small>Jornada</small><strong>08:30–14:00</strong></span>
+                        <span><small>Ruta</small><strong>Centre · Llevant</strong></span>
+                      </div>
+                      <ol>
+                        <li><i>1</i><span><strong>Servei domiciliari</strong><small>08:30 · Zona Centre</small></span></li>
+                        <li><i>2</i><span><strong>Acompanyament</strong><small>10:15 · Zona Centre</small></span></li>
+                        <li><i>3</i><span><strong>Suport personal</strong><small>12:00 · Llevant</small></span></li>
+                      </ol>
+                      <footer>
+                        <button class="button secondary compact" type="button">Veure planificació</button>
+                        <button class="button primary compact" type="button"><Check size={14} /> Acceptar pla</button>
+                      </footer>
+                    </article>
+                    <div class="chat-message outgoing">
+                      <p>Perfecte. Puc assumir el pla, però necessit revisar el marge entre la segona i la tercera visita.</p>
+                      <time>10:22 · Llegit</time>
+                    </div>
+                    <div class="chat-message incoming">
+                      <p>D'acord. He afegit 15 minuts de marge i una nota a la ruta.</p>
+                      <time>10:24</time>
+                    </div>
+                  </div>
+
+                  <footer class="chat-composer">
+                    <button class="icon-button" type="button" aria-label="Adjuntar contingut"><Plus size={17} /></button>
+                    <span>Escriu un missatge o comparteix un pla…</span>
+                    <button class="send-button" type="button" aria-label="Enviar missatge"><ArrowRight size={16} /></button>
+                  </footer>
+                </section>
+              </div>
+            </article>
+
+            <article class="screen-example screen-example-wide" id="family-access">
+              <header class="screen-example-heading">
+                <div>
+                  <span>07 · Persones i permisos</span>
+                  <h3>Grup familiar i autoritzacions</h3>
+                  <p>Visibilitat explícita sobre qui pot consultar, comunicar i signar.</p>
+                </div>
+                <span class="badge info"><ShieldCheck size={13} /> Accés controlat</span>
+              </header>
+
+              <div class="people-access-preview">
+                <aside class="people-panel">
+                  <header><strong>Grups familiars</strong><button class="icon-button" type="button" aria-label="Afegir grup familiar"><Plus size={16} /></button></header>
+                  <label class="chat-search"><Search size={14} /><input type="search" aria-label="Cercar grup familiar" placeholder="Cercar per nom o identificador" /></label>
+                  <div class="people-list">
+                    <button class="active" type="button"><span class="avatar">GF</span><span><strong>Grup familiar #0184</strong><small>2 persones ateses · 3 accessos</small></span><ArrowRight size={14} /></button>
+                    <button type="button"><span class="avatar">GF</span><span><strong>Grup familiar #0201</strong><small>1 persona atesa · 2 accessos</small></span><ArrowRight size={14} /></button>
+                    <button type="button"><span class="avatar">GF</span><span><strong>Grup familiar #0216</strong><small>Autorització pendent</small></span><ArrowRight size={14} /></button>
+                  </div>
+                </aside>
+
+                <section class="access-record">
+                  <header>
+                    <div><span>Grup familiar #0184</span><h4>Accés i representació</h4><p>La persona atesa, qui gestiona l'app i qui pot signar poden ser persones diferents.</p></div>
+                    <button class="button primary compact" type="button"><Plus size={14} /> Nova autorització</button>
+                  </header>
+                  <div class="access-summary">
+                    <article><span class="avatar">PA</span><span><small>Persona atesa</small><strong>Persona #0248</strong><em>Rep el servei</em></span></article>
+                    <article><span class="avatar accent">LF</span><span><small>Líder de l'app</small><strong>Familiar autoritzat</strong><em>Gestiona accessos</em></span></article>
+                    <article><span class="avatar">CP</span><span><small>Cuidadora principal</small><strong>Contacte principal</strong><em>Sense accés laboral</em></span></article>
+                  </div>
+                  <div class="permission-table">
+                    <div class="permission-head"><span>Persona</span><span>Calendari</span><span>Historial</span><span>Comunicació</span><span>Signatura</span><span>Estat</span></div>
+                    <div class="permission-row"><span><strong>Líder familiar</strong><small>Accés principal</small></span><i><Check size={13} /></i><i><Check size={13} /></i><i><Check size={13} /></i><i><Check size={13} /></i><span class="badge success">Actiu</span></div>
+                    <div class="permission-row"><span><strong>Familiar autoritzat</strong><small>Accés limitat</small></span><i><Check size={13} /></i><i class="muted">—</i><i><Check size={13} /></i><i class="muted">—</i><span class="badge info">Limitat</span></div>
+                    <div class="permission-row"><span><strong>Cuidadora principal</strong><small>Només contacte</small></span><i class="muted">—</i><i class="muted">—</i><i><Check size={13} /></i><i class="muted">—</i><span class="badge warning">Revisar</span></div>
+                  </div>
+                  <footer class="access-note"><ShieldCheck size={16} /><span><strong>Principi de mínima visibilitat</strong><small>Les dades sensibles i laborals no es comparteixen amb la família.</small></span><button type="button">Veure auditoria</button></footer>
+                </section>
+              </div>
+            </article>
+
+            <article class="screen-example screen-example-wide" id="direction-dashboard">
+              <header class="screen-example-heading">
+                <div>
+                  <span>08 · Direcció</span>
+                  <h3>Seguiment operatiu</h3>
+                  <p>Activitat, incidències, càrrega i ús de l'app en una lectura executiva.</p>
+                </div>
+                <span class="badge success"><Activity size={13} /> Actualitzat ara</span>
+              </header>
+
+              <div class="direction-preview">
+                <div class="direction-toolbar">
+                  <div><span>Resum de direcció</span><strong>Setmana 30 · Totes les línies</strong></div>
+                  <div><button class="button secondary compact" type="button">Exportar informe</button><button class="button primary compact" type="button">Veure alertes</button></div>
+                </div>
+                <div class="direction-metrics">
+                  <article><span>Visites realitzades</span><strong>612 <small>/ 638</small></strong><em class="positive">95,9% completades</em></article>
+                  <article><span>Incidències obertes</span><strong>14</strong><em class="warning-text">4 d'alta prioritat</em></article>
+                  <article><span>Ús de l'app</span><strong>87%</strong><em class="positive">+8% aquest mes</em></article>
+                  <article><span>Càrrega de coordinació</span><strong>3</strong><em class="warning-text">Prop del límit</em></article>
+                </div>
+                <div class="direction-body">
+                  <section class="activity-chart">
+                    <header><div><strong>Planificades i realitzades</strong><small>Darrers 7 dies</small></div><span class="chart-legend"><i></i> Planificades <i></i> Realitzades</span></header>
+                    <div class="bar-chart" aria-label="Comparació de visites planificades i realitzades durant set dies">
+                      <div><span style="height: 80%"></span><i style="height: 72%"></i><small>Dl.</small></div>
+                      <div><span style="height: 92%"></span><i style="height: 88%"></i><small>Dt.</small></div>
+                      <div><span style="height: 76%"></span><i style="height: 74%"></i><small>Dc.</small></div>
+                      <div><span style="height: 100%"></span><i style="height: 91%"></i><small>Dj.</small></div>
+                      <div><span style="height: 88%"></span><i style="height: 84%"></i><small>Dv.</small></div>
+                      <div><span style="height: 54%"></span><i style="height: 51%"></i><small>Ds.</small></div>
+                      <div><span style="height: 48%"></span><i style="height: 47%"></i><small>Dg.</small></div>
+                    </div>
+                  </section>
+                  <aside class="operations-feed">
+                    <header><strong>Requereix atenció</strong><span>6 elements</span></header>
+                    <article><i class="danger"><TriangleAlert size={14} /></i><span><strong>4 visites sense evidència</strong><small>Bloquegen la preliquidació</small></span><button type="button">Revisar</button></article>
+                    <article><i class="warning"><Users size={14} /></i><span><strong>Càrrega de coordinació al 96%</strong><small>Zona Centre · 75 de 78</small></span><button type="button">Obrir</button></article>
+                    <article><i class="info"><MessageCircle size={14} /></i><span><strong>2 converses escalades</strong><small>Esperen resposta de coordinació</small></span><button type="button">Respondre</button></article>
+                  </aside>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen-example screen-example-phone" id="mobile-chat">
+              <header class="screen-example-heading">
+                <div>
+                  <span>09 · Treballadora</span>
+                  <h3>Chat amb objectes de feina</h3>
+                  <p>Conversació directa amb plans i canvis que es poden revisar i acceptar.</p>
+                </div>
+              </header>
+
+              <div class="compact-phone-shell">
+                <div class="compact-phone-screen mobile-chat-screen">
+                  <div class="phone-status"><span>10:24</span><i></i></div>
+                  <header class="mobile-chat-header">
+                    <button class="icon-button" type="button" aria-label="Tornar"><ArrowRight class="back-icon" size={17} /></button>
+                    <span class="avatar">MC</span>
+                    <span><strong>Maria · Coordinació</strong><small><i></i> En línia</small></span>
+                    <button class="icon-button" type="button" aria-label="Més opcions"><Ellipsis size={17} /></button>
+                  </header>
+                  <div class="mobile-chat-thread">
+                    <span class="thread-date">Avui</span>
+                    <div class="mini-message incoming"><p>Et compartesc el pla actualitzat de demà.</p><time>10:18</time></div>
+                    <article class="mobile-shared-plan">
+                      <header><span class="shared-object-icon"><CalendarDays size={15} /></span><span><small>Pla compartit</small><strong>Dimarts 28</strong></span><span class="badge info">Nou</span></header>
+                      <div><span><small>4 visites</small><strong>08:30–14:00</strong></span><span><small>Ruta</small><strong>Centre · Llevant</strong></span></div>
+                      <p><MapPin size={13} /> Inclou un canvi de zona i 15 min de marge.</p>
+                      <footer><button class="button secondary compact" type="button">Revisar</button><button class="button primary compact" type="button">Acceptar</button></footer>
+                    </article>
+                    <div class="mini-message outgoing"><p>Rebut. El revis i et confirm ara.</p><time>10:22 · Llegit</time></div>
+                  </div>
+                  <footer class="mobile-chat-composer">
+                    <button type="button" aria-label="Adjuntar contingut"><Plus size={16} /></button><span>Missatge…</span><button class="send-button" type="button" aria-label="Enviar missatge"><ArrowRight size={15} /></button>
+                  </footer>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen-example screen-example-phone" id="incident-report">
+              <header class="screen-example-heading">
+                <div>
+                  <span>10 · Treballadora</span>
+                  <h3>Nova incidència</h3>
+                  <p>Registre guiat, vinculat a la visita i preparat per continuar sense connexió.</p>
+                </div>
+              </header>
+
+              <div class="compact-phone-shell">
+                <div class="compact-phone-screen incident-screen">
+                  <div class="phone-status"><span>11:36</span><i></i></div>
+                  <header class="compact-screen-header">
+                    <button class="icon-button" type="button" aria-label="Tornar"><ArrowRight class="back-icon" size={17} /></button>
+                    <span>Nova incidència</span>
+                    <span class="sync-state offline"><i></i> Offline</span>
+                  </header>
+                  <section class="linked-visit-card">
+                    <span class="shared-object-icon"><CalendarDays size={16} /></span>
+                    <span><small>Visita vinculada</small><strong>Servei domiciliari · 10:00</strong><em>Persona atesa #0248</em></span>
+                    <Check size={15} />
+                  </section>
+                  <section class="incident-form">
+                    <div><span>Prioritat</span><div class="priority-options"><button type="button">Baixa</button><button class="active" type="button">Mitjana</button><button type="button">Alta</button></div></div>
+                    <label><span>Tipus d'incidència</span><button class="select-field" type="button">Canvi en el servei <ChevronDown size={14} /></button></label>
+                    <label><span>Què ha passat?</span><span class="textarea-field">La visita ha començat amb retard per una incidència de transport.</span></label>
+                    <button class="evidence-upload" type="button"><Plus size={16} /><span><strong>Afegir evidència</strong><small>Foto o document, si és necessari</small></span></button>
+                  </section>
+                  <div class="offline-save-note"><ShieldCheck size={15} /><span><strong>Es desarà al dispositiu</strong><small>S'enviarà quan recuperis connexió.</small></span></div>
+                  <div class="incident-actions"><button class="button primary wide" type="button">Desar incidència</button></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="screen-example screen-example-phone" id="weekly-plan">
+              <header class="screen-example-heading">
+                <div>
+                  <span>11 · Treballadora</span>
+                  <h3>Planificació setmanal offline</h3>
+                  <p>Jornada, tipus de temps i canvis pendents sempre disponibles.</p>
+                </div>
+              </header>
+
+              <div class="compact-phone-shell">
+                <div class="compact-phone-screen week-mobile-screen">
+                  <div class="phone-status"><span>07:42</span><i></i></div>
+                  <header class="week-mobile-header">
+                    <div><small>La meva planificació</small><h4>Setmana 30</h4></div>
+                    <button class="icon-button" type="button" aria-label="Notificacions"><Bell size={16} /><i></i></button>
+                  </header>
+                  <div class="offline-banner"><span><i></i> Mode offline</span><small>Dades actualitzades a les 07:38</small></div>
+                  <div class="week-tabs">
+                    <button type="button"><small>Dl.</small><strong>27</strong></button>
+                    <button class="active" type="button"><small>Dt.</small><strong>28</strong></button>
+                    <button type="button"><small>Dc.</small><strong>29</strong></button>
+                    <button type="button"><small>Dj.</small><strong>30</strong></button>
+                    <button type="button"><small>Dv.</small><strong>31</strong></button>
+                  </div>
+                  <section class="mobile-plan-list">
+                    <header><span><strong>Dimarts, 28 de juliol</strong><small>4 visites · 5 h 30 min</small></span><span class="badge info">1 canvi</span></header>
+                    <article><time>08:30</time><i></i><span><strong>Servei domiciliari</strong><small>Zona Centre · 1 h</small></span><ArrowRight size={14} /></article>
+                    <article class="changed"><time>10:15</time><i></i><span><strong>Acompanyament</strong><small>Nou horari · 45 min</small></span><span class="badge warning">Canvi</span></article>
+                    <article><time>12:00</time><i></i><span><strong>Suport personal</strong><small>Llevant · 1 h 30 min</small></span><ArrowRight size={14} /></article>
+                  </section>
+                  <section class="sync-queue">
+                    <span><Activity size={15} /></span><span><strong>2 accions pendents</strong><small>1 fitxatge · 1 incidència</small></span><button type="button">Veure</button>
+                  </section>
+                  <nav class="phone-nav"><a class="active" href="#key-screens"><CalendarDays size={18} /><span>Jornada</span></a><a href="#key-screens"><MessageCircle size={18} /><span>Chat</span></a><a href="#key-screens"><Users size={18} /><span>Perfil</span></a></nav>
                 </div>
               </div>
             </article>
