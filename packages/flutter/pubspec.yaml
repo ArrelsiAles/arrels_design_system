@@ -1,6 +1,6 @@
 name: arrels_design_system_flutter
 description: "ARRELS360 design system for Flutter — tokens, theme and Arrels* components shared across admin, worker and family apps."
-version: 0.1.6
+version: 0.1.7
 homepage:
 publish_to: "none"
 
@@ -19,3 +19,14 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 
 flutter:
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: fonts/inter/Inter-Regular.ttf
+          weight: 400
+        - asset: fonts/inter/Inter-Medium.ttf
+          weight: 500
+        - asset: fonts/inter/Inter-SemiBold.ttf
+          weight: 600
+        - asset: fonts/inter/Inter-Bold.ttf
+          weight: 700

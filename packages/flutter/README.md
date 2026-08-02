@@ -81,6 +81,14 @@ Icons are passed as Lucide `IconData` (from `lucide_icons_flutter`) rather
 than string names — Flutter icon fonts bake stroke weight into the glyph,
 so there's no runtime "stroke width" knob like the web reference has.
 
+Inter (regular/medium/semibold/bold, `fonts/inter/*.ttf`, SIL Open Font
+License 1.1) ships as a package asset — consuming apps get the real
+typeface automatically via `ArrelsTheme`'s `fontFamily: 'Inter'`, no extra
+`pubspec.yaml` font declaration needed. Without the actual glyphs bundled,
+`fontFamily: 'Inter'` alone just falls back to the platform's default sans
+at each declared weight, which reads noticeably bolder/heavier than the
+real Inter regular.
+
 ## Deferred to a later pass
 
 Documented in the design system but not yet built here — add following the

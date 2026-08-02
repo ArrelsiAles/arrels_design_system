@@ -1,3 +1,19 @@
+## 0.1.7
+
+* Bundle real Inter font files (regular/medium/semibold/bold) as package
+  assets instead of only naming `fontFamily: 'Inter'` in `ThemeData`. Without
+  the actual glyphs, browsers/platforms were substituting a fallback font
+  that renders visibly bolder/heavier at the same declared weight — this is
+  what made text (and, by association, the whole UI) look "too black" or
+  coarse. `pubspec.yaml`'s `flutter: fonts:` section is package-level, so
+  consuming apps get Inter automatically, no per-app font declaration
+  needed.
+* `ArrelsMenu` gains a `tooltip` param (forwarded to the underlying
+  `PopupMenuButton`) so callers don't need to build accessibility text into
+  `trigger`. Documented that `trigger` must be presentational — an
+  `ArrelsIconButton` (or anything else with its own `onPressed`) fights the
+  `PopupMenuButton`'s own tap handling for the gesture.
+
 ## 0.1.6
 
 * `ArrelsTheme` disables the Material splash/ripple globally
