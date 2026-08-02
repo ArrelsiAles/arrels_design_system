@@ -1,3 +1,11 @@
+## 0.1.10
+
+* Reverted 0.1.8: the regular border width token goes back to 1px
+  (`dimension.border.default`). That change was based on a mixup — the
+  "borders look too thick" feedback was actually about the *focus* border
+  (fixed correctly in 0.1.9, which stays), not the regular one. Regular
+  borders/dividers/text-field outlines are back to 1px.
+
 ## 0.1.9
 
 * Lowered the focus border width token from 3px to 1px
