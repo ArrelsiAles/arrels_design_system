@@ -1,3 +1,11 @@
+## 0.1.9
+
+* Lowered the focus border width token from 3px to 1px
+  (`dimension.border.focus`, regenerated into `ArrelsBorderWidth.focus`) and
+  wired `ArrelsTheme`'s `InputDecorationTheme.focusedBorder` to it instead of
+  a hardcoded `2` — the focused-field ring was reported as too thick,
+  separately from the regular (0.5px, see 0.1.8) border weight.
+
 ## 0.1.8
 
 * Lowered the "regular" border width token from 1px to 0.5px

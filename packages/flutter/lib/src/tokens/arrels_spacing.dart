@@ -50,7 +50,7 @@ abstract final class ArrelsIconSize {
 /// Border width scale.
 abstract final class ArrelsBorderWidth {
   static const regular = 0.5;
-  static const focus = 3.0;
+  static const focus = 1.0;
 
   const ArrelsBorderWidth._();
 }

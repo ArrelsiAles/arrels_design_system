@@ -106,7 +106,10 @@ abstract final class ArrelsTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colors.borderFocus, width: 2),
+          borderSide: BorderSide(
+            color: colors.borderFocus,
+            width: ArrelsBorderWidth.focus,
+          ),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),

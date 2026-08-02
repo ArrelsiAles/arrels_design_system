@@ -86,7 +86,7 @@
       "lg": { "$value": { "value": 24, "unit": "px" } },
       "xl": { "$value": { "value": 32, "unit": "px" } }
     },
-    "border": { "default": { "$value": { "value": 0.5, "unit": "px" } }, "focus": { "$value": { "value": 3, "unit": "px" } } },
+    "border": { "default": { "$value": { "value": 0.5, "unit": "px" } }, "focus": { "$value": { "value": 1, "unit": "px" } } },
     "breakpoint": {
       "phone": { "$value": { "value": 375, "unit": "px" } },
       "tablet": { "$value": { "value": 768, "unit": "px" } },
