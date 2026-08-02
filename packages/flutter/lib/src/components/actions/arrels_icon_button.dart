@@ -52,7 +52,10 @@ class ArrelsIconButton extends StatelessWidget {
               ? colors.actionPrimaryBackground
               : colors.contentPrimary);
     final BorderSide border = tone == ArrelsIconButtonTone.outline
-        ? BorderSide(color: colors.borderDefault)
+        ? BorderSide(
+            color: colors.borderDefault,
+            width: ArrelsBorderWidth.regular,
+          )
         : BorderSide.none;
 
     return Tooltip(

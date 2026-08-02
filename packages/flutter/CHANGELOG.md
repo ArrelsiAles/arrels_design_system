@@ -1,3 +1,18 @@
+## 0.1.8
+
+* Lowered the "regular" border width token from 1px to 0.5px
+  (`packages/tokens/src/primitives.tokens.json`'s `dimension.border.default`,
+  regenerated into `ArrelsBorderWidth.regular`) — the brand's borders,
+  dividers and text-field outlines should read as subtle hairlines, not a
+  full 1px stroke. Every component that draws a "regular" border
+  (`ArrelsButton` secondary, `ArrelsCard`, `ArrelsCheckbox`, `ArrelsMenu`,
+  `ArrelsIconButton` outline tone) and `ArrelsTheme`'s
+  `InputDecorationTheme`/`DividerThemeData` now reference the token
+  explicitly instead of relying on `BorderSide`'s implicit 1.0 default, so
+  this one token change actually takes effect everywhere. Focus rings and
+  the selected-card border stay at their own explicit weights (2-3px) —
+  those are deliberate emphasis, not the "chrome" this change targets.
+
 ## 0.1.7
 
 * Bundle real Inter font files (regular/medium/semibold/bold) as package

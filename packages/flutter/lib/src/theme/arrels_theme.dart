@@ -56,6 +56,13 @@ abstract final class ArrelsTheme {
       ),
       textTheme: textTheme,
       dividerColor: colors.borderDefault,
+      // Global default for any Divider() (including plain Material ones in
+      // a consuming app) — matches the brand's thin, subtle border weight
+      // rather than Material's default 1.0.
+      dividerTheme: DividerThemeData(
+        color: colors.borderDefault,
+        thickness: ArrelsBorderWidth.regular,
+      ),
       focusColor: colors.borderFocus,
       // No splash/ripple on Arrels* components (or any Material widget that
       // inherits it) — the brand's motion language is calm, not a Material
@@ -85,11 +92,17 @@ abstract final class ArrelsTheme {
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colors.borderDefault),
+          borderSide: BorderSide(
+            color: colors.borderDefault,
+            width: ArrelsBorderWidth.regular,
+          ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colors.borderDefault),
+          borderSide: BorderSide(
+            color: colors.borderDefault,
+            width: ArrelsBorderWidth.regular,
+          ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -97,7 +110,10 @@ abstract final class ArrelsTheme {
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: colors.dangerForeground),
+          borderSide: BorderSide(
+            color: colors.dangerForeground,
+            width: ArrelsBorderWidth.regular,
+          ),
         ),
       ),
     );

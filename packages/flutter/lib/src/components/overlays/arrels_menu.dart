@@ -56,7 +56,10 @@ class ArrelsMenu extends StatelessWidget {
       color: colors.surfaceRaised,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(ArrelsRadius.md),
-        side: BorderSide(color: colors.borderDefault),
+        side: BorderSide(
+          color: colors.borderDefault,
+          width: ArrelsBorderWidth.regular,
+        ),
       ),
       onSelected: onSelected,
       itemBuilder: (context) => [

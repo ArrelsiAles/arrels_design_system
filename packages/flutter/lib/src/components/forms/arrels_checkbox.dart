@@ -37,7 +37,10 @@ class ArrelsCheckbox extends StatelessWidget {
         onChanged: enabled ? onChanged : null,
         activeColor: colors.actionPrimaryBackground,
         checkColor: colors.contentInverse,
-        side: BorderSide(color: colors.borderStrong),
+        side: BorderSide(
+          color: colors.borderStrong,
+          width: ArrelsBorderWidth.regular,
+        ),
       ),
     );
 

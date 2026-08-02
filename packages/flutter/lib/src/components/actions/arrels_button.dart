@@ -106,7 +106,9 @@ class ArrelsButton extends StatelessWidget {
         color: background,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(ArrelsRadius.md),
-          side: border != null ? BorderSide(color: border) : BorderSide.none,
+          side: border != null
+              ? BorderSide(color: border, width: ArrelsBorderWidth.regular)
+              : BorderSide.none,
         ),
         clipBehavior: Clip.antiAlias,
         child: InkWell(

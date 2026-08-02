@@ -73,7 +73,10 @@ class ArrelsCard extends StatelessWidget {
       shadowColor: Colors.black.withValues(alpha: 0.08),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(ArrelsRadius.lg),
-        side: BorderSide(color: borderColor, width: selected ? 2 : 1),
+        side: BorderSide(
+          color: borderColor,
+          width: selected ? 2 : ArrelsBorderWidth.regular,
+        ),
       ),
       clipBehavior: Clip.antiAlias,
       child: variant == ArrelsCardVariant.static_
