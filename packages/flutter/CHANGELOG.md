@@ -1,3 +1,8 @@
+## 0.1.4
+
+* Fix `ArrelsLink` overflowing in constrained layouts: its label `Text` now
+  wraps in `Flexible` with `TextOverflow.ellipsis`, matching `ArrelsButton`.
+
 ## 0.1.3
 
 * `ArrelsTextField` gains `initialValue` (like `TextFormField.initialValue`)
