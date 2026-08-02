@@ -1,3 +1,14 @@
+## 0.1.11
+
+* Fixed oversized text-field placeholders/labels/typed text: `ArrelsTheme`'s
+  `InputDecorationTheme` never set `hintStyle`/`labelStyle`, so Material 3's
+  default (`TextTheme.bodyLarge`, mapped here to the 18px "body-lg" token)
+  applied — noticeably bigger than the intended 16px "body" size for form
+  text. Added explicit `hintStyle`/`labelStyle`/`floatingLabelStyle` to the
+  theme, and set an explicit `ArrelsTextStyles.body` style on the typed/hint
+  text in `ArrelsTextField`, `ArrelsSelect` (including its dropdown items),
+  and `ArrelsSearchField` instead of relying on the ambient default.
+
 ## 0.1.10
 
 * Reverted 0.1.8: the regular border width token goes back to 1px

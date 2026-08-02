@@ -90,6 +90,18 @@ abstract final class ArrelsTheme {
           horizontal: ArrelsSpacing.space4,
           vertical: ArrelsSpacing.space3,
         ),
+        // Explicit, or these fall back to Material 3's default input text
+        // style (TextTheme.bodyLarge — 18px here), not the 16px "body" size
+        // placeholders/labels are meant to match.
+        hintStyle: ArrelsTextStyles.body.copyWith(
+          color: colors.contentSecondary,
+        ),
+        labelStyle: ArrelsTextStyles.body.copyWith(
+          color: colors.contentSecondary,
+        ),
+        floatingLabelStyle: ArrelsTextStyles.bodySmall.copyWith(
+          color: colors.contentSecondary,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(

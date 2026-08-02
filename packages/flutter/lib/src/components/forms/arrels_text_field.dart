@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../theme/arrels_colors.dart';
+import '../../theme/arrels_text_styles.dart';
 import '../../tokens/arrels_spacing.dart';
 import '../core/arrels_icon.dart';
 import 'arrels_field.dart';
@@ -77,7 +78,7 @@ class ArrelsTextField extends StatelessWidget {
           keyboardType: keyboardType,
           onChanged: onChanged,
           focusNode: focusNode,
-          style: TextStyle(color: colors.contentPrimary),
+          style: ArrelsTextStyles.body.copyWith(color: colors.contentPrimary),
           decoration: InputDecoration(
             hintText: placeholder,
             counterText: '',

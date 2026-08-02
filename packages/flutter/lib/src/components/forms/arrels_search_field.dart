@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../../theme/arrels_colors.dart';
+import '../../theme/arrels_text_styles.dart';
 import '../../tokens/arrels_spacing.dart';
 import '../actions/arrels_icon_button.dart';
 import '../core/arrels_icon.dart';
@@ -36,7 +37,7 @@ class ArrelsSearchField extends StatelessWidget {
       child: TextField(
         controller: controller,
         onChanged: onChanged,
-        style: TextStyle(color: colors.contentPrimary),
+        style: ArrelsTextStyles.body.copyWith(color: colors.contentPrimary),
         decoration: InputDecoration(
           hintText: placeholder,
           prefixIcon: Padding(

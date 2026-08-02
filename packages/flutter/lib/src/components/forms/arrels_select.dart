@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../../theme/arrels_colors.dart';
+import '../../theme/arrels_text_styles.dart';
 import '../../tokens/arrels_spacing.dart';
 import '../core/arrels_icon.dart';
 import 'arrels_field.dart';
@@ -60,14 +61,24 @@ class ArrelsSelect<T> extends StatelessWidget {
           ),
           hint: Text(
             placeholder,
-            style: TextStyle(color: colors.contentSecondary),
+            style: ArrelsTextStyles.body.copyWith(
+              color: colors.contentSecondary,
+            ),
           ),
-          style: TextStyle(color: colors.contentPrimary),
+          style: ArrelsTextStyles.body.copyWith(color: colors.contentPrimary),
           dropdownColor: colors.surfaceRaised,
           decoration: const InputDecoration(),
           items: [
             for (final option in options)
-              DropdownMenuItem(value: option.value, child: Text(option.label)),
+              DropdownMenuItem(
+                value: option.value,
+                child: Text(
+                  option.label,
+                  style: ArrelsTextStyles.body.copyWith(
+                    color: colors.contentPrimary,
+                  ),
+                ),
+              ),
           ],
         ),
       ),
