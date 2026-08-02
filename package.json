@@ -1,20 +1,20 @@
 {
-  "name": "arrels-design-system",
+  "name": "arrels-design-system-monorepo",
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "workspaces": [
+    "apps/docs",
+    "packages/tokens"
+  ],
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "build:pages": "astro build",
-    "postbuild": "node scripts/prepare-sites-build.mjs",
-    "preview": "astro preview",
-    "check": "astro check"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@lucide/astro": "^1.26.0",
-    "astro": "^5.18.2",
-    "typescript": "^6.0.3"
+    "dev": "npm run dev --workspace @arrels/design-docs",
+    "build": "npm run build --workspace @arrels/design-docs",
+    "build:pages": "npm run build:pages --workspace @arrels/design-docs",
+    "preview": "npm run preview --workspace @arrels/design-docs",
+    "check": "npm run check:tokens && npm run check:docs",
+    "check:docs": "npm run check --workspace @arrels/design-docs",
+    "check:tokens": "node tooling/generate-flutter-tokens.mjs --check",
+    "generate": "node tooling/generate-flutter-tokens.mjs"
   }
 }

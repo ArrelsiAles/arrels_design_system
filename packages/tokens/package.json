@@ -1,0 +1,18 @@
+{
+  "name": "@arrels/design-tokens",
+  "version": "0.1.0",
+  "description": "Technology-neutral design tokens for ARRELS360.",
+  "type": "module",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    "./primitives": "./src/primitives.tokens.json",
+    "./semantic-light": "./src/semantic-light.tokens.json",
+    "./semantic-dark": "./src/semantic-dark.tokens.json",
+    "./components": "./src/components.tokens.json"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
