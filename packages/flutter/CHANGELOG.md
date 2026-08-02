@@ -1,3 +1,11 @@
+## 0.1.6
+
+* `ArrelsTheme` disables the Material splash/ripple globally
+  (`splashFactory: NoSplash.splashFactory`, transparent `splashColor`/
+  `highlightColor`). Every `Arrels*` component's `InkWell` reads this from
+  `Theme` rather than setting its own factory, so this removes the ripple
+  from all of them (and from any other Material widget in a consuming app).
+
 ## 0.1.5
 
 * `dart format` fix on `arrels_link.dart` (0.1.4 CI failed the

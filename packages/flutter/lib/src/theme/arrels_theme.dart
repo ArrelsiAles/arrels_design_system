@@ -57,7 +57,14 @@ abstract final class ArrelsTheme {
       textTheme: textTheme,
       dividerColor: colors.borderDefault,
       focusColor: colors.borderFocus,
-      splashFactory: InkRipple.splashFactory,
+      // No splash/ripple on Arrels* components (or any Material widget that
+      // inherits it) — the brand's motion language is calm, not a Material
+      // ripple. Every Arrels* component's InkWell reads this from Theme
+      // rather than setting its own splashFactory, so this one line covers
+      // all of them.
+      splashFactory: NoSplash.splashFactory,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
       visualDensity: VisualDensity.standard,
       extensions: [colors],
       pageTransitionsTheme: const PageTransitionsTheme(
