@@ -47,11 +47,7 @@ class ArrelsLink extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Flexible(
-              child: Text(
-                label,
-                style: style,
-                overflow: TextOverflow.ellipsis,
-              ),
+              child: Text(label, style: style, overflow: TextOverflow.ellipsis),
             ),
             if (external) ...[
               const SizedBox(width: ArrelsSpacing.space1),

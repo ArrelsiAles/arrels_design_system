@@ -1,3 +1,8 @@
+## 0.1.5
+
+* `dart format` fix on `arrels_link.dart` (0.1.4 CI failed the
+  `dart format --set-exit-if-changed` check).
+
 ## 0.1.4
 
 * Fix `ArrelsLink` overflowing in constrained layouts: its label `Text` now
