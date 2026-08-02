@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "color": {
+    "$type": "color",
+    "surface": {
+      "canvas": { "$value": "{color.neutral.50}" },
+      "default": { "$value": "{color.neutral.25}" },
+      "raised": { "$value": "{color.neutral.0}" },
+      "subtle": { "$value": "{color.neutral.100}" },
+      "inverse": { "$value": "{color.neutral.1000}" }
+    },
+    "content": {
+      "primary": { "$value": "{color.neutral.1000}" },
+      "secondary": { "$value": "{color.neutral.500}" },
+      "inverse": { "$value": "{color.neutral.0}" },
+      "disabled": { "$value": "{color.neutral.300}" }
+    },
+    "border": {
+      "default": { "$value": "{color.neutral.200}" },
+      "strong": { "$value": "{color.neutral.300}" },
+      "focus": { "$value": "{color.pink.700}" }
+    },
+    "brand": {
+      "accent": { "$value": "{color.pink.400}" },
+      "accentSoft": { "$value": "{color.pink.50}" },
+      "onAccentLarge": { "$value": "{color.neutral.1000}" }
+    },
+    "action": {
+      "primary": { "background": { "$value": "{color.pink.600}" }, "foreground": { "$value": "{color.neutral.0}" }, "hover": { "$value": "{color.pink.700}" }, "disabled": { "$value": "{color.neutral.200}" } },
+      "secondary": { "background": { "$value": "{color.neutral.0}" }, "foreground": { "$value": "{color.neutral.1000}" }, "border": { "$value": "{color.neutral.300}" } }
+    },
+    "state": {
+      "success": { "foreground": { "$value": "{color.green.700}" }, "background": { "$value": "{color.green.100}" } },
+      "warning": { "foreground": { "$value": "{color.amber.700}" }, "background": { "$value": "{color.amber.100}" } },
+      "danger": { "foreground": { "$value": "{color.red.700}" }, "background": { "$value": "{color.red.100}" } },
+      "info": { "foreground": { "$value": "{color.indigo.700}" }, "background": { "$value": "{color.indigo.100}" } }
+    }
+  }
+}
+

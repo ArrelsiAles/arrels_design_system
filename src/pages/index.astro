@@ -33,6 +33,7 @@ const assetBase = import.meta.env.BASE_URL.replace(/\/$/, "");
 const navigation = [
   { href: "#identity", label: "Identitat", icon: HeartHandshake },
   { href: "#foundations", label: "Foundations", icon: Grid2x2 },
+  { href: "#pink-system", label: "Sistema rosa", icon: FileText },
   { href: "#components", label: "Components", icon: Sparkles },
   { href: "#admin", label: "Admin", icon: LayoutDashboard },
   { href: "#key-screens", label: "Pantalles clau", icon: CalendarDays },
@@ -473,6 +474,62 @@ const schedule = [
                 <div><i class="radius-large"></i><span>Large</span></div>
               </div>
             </article>
+          </div>
+        </section>
+
+        <section class="section pink-system-section" id="pink-system" aria-labelledby="pink-system-title">
+          <div class="section-intro split">
+            <div>
+              <p class="eyebrow">Sistema aprovat · v0.1</p>
+              <h2 id="pink-system-title">Precisió rosa ja és una especificació.</h2>
+            </div>
+            <p>
+              Les altres rutes continuen disponibles per comparar. Aquesta és la base
+              compartida que s'ha d'utilitzar per dissenyar i implementar ARRELS360.
+            </p>
+          </div>
+
+          <div class="system-decision-card">
+            <div class="approved-palette" aria-label="Paleta rosa aprovada">
+              <div class="approved-swatch brand-pink">
+                <span>Marca</span><strong>#EF7EAD</strong><small>Identitat i accent visual</small>
+              </div>
+              <div class="approved-swatch action-pink">
+                <span>Acció</span><strong>#C34880</strong><small>Text blanc · WCAG AA</small>
+              </div>
+              <div class="approved-swatch soft-pink">
+                <span>Suau</span><strong>#FDE6EF</strong><small>Selecció i agrupació</small>
+              </div>
+              <div class="approved-swatch dark-pink">
+                <span>Marca dark</span><strong>#F08CAF</strong><small>Accent sobre fons fosc</small>
+              </div>
+            </div>
+            <div class="contrast-decision">
+              <span><ShieldCheck size={18} aria-hidden="true" /> Parell d'acció autoritzat</span>
+              <button type="button">Acció principal</button>
+              <p>
+                El rosa de marca i el rosa d'acció són intencionadament diferents.
+                Així mantenim una identitat viva sense sacrificar la lectura.
+              </p>
+            </div>
+          </div>
+
+          <div class="system-layer-grid">
+            <article><span>01</span><h3>Foundations</h3><p>Color, tipografia, espai, forma, moviment, densitat i responsive.</p></article>
+            <article><span>02</span><h3>Tokens</h3><p>Primitives, rols semàntics light/dark i decisions de component.</p></article>
+            <article><span>03</span><h3>Components</h3><p>Contractes d'accions, formularis, dades, navegació, overlays i domini.</p></article>
+            <article><span>04</span><h3>Patterns</h3><p>Visites, rutes, evidències, incidències, permisos, offline i chat.</p></article>
+          </div>
+
+          <div class="system-download-card">
+            <div>
+              <FileText size={22} aria-hidden="true" />
+              <span><strong>Paquet ARRELS360 Pink v0.1</strong><small>Documentació, tokens JSON i instruccions per a Claude.</small></span>
+            </div>
+            <a class="button primary" href={`${assetBase}/arrels360-design-system-v0.1.zip`} download>
+              Descarregar paquet
+              <ArrowRight size={17} aria-hidden="true" />
+            </a>
           </div>
         </section>
 

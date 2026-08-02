@@ -1,0 +1,77 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "component": {
+    "button": {
+      "primary": {
+        "background": { "$type": "color", "$value": "{color.action.primary.background}" },
+        "foreground": { "$type": "color", "$value": "{color.action.primary.foreground}" },
+        "backgroundHover": { "$type": "color", "$value": "{color.action.primary.hover}" },
+        "height": { "$type": "dimension", "$value": "{dimension.control.md}" },
+        "radius": { "$type": "dimension", "$value": "{dimension.radius.md}" },
+        "paddingInline": { "$type": "dimension", "$value": "{dimension.space.4}" },
+        "gap": { "$type": "dimension", "$value": "{dimension.space.2}" }
+      },
+      "secondary": {
+        "background": { "$type": "color", "$value": "{color.action.secondary.background}" },
+        "foreground": { "$type": "color", "$value": "{color.action.secondary.foreground}" },
+        "border": { "$type": "color", "$value": "{color.action.secondary.border}" },
+        "height": { "$type": "dimension", "$value": "{dimension.control.md}" },
+        "radius": { "$type": "dimension", "$value": "{dimension.radius.md}" }
+      }
+    },
+    "input": {
+      "background": { "$type": "color", "$value": "{color.surface.raised}" },
+      "foreground": { "$type": "color", "$value": "{color.content.primary}" },
+      "border": { "$type": "color", "$value": "{color.border.default}" },
+      "borderFocus": { "$type": "color", "$value": "{color.border.focus}" },
+      "height": { "$type": "dimension", "$value": "{dimension.control.md}" },
+      "radius": { "$type": "dimension", "$value": "{dimension.radius.md}" },
+      "paddingInline": { "$type": "dimension", "$value": "{dimension.space.3}" }
+    },
+    "selectionControl": {
+      "selectedBackground": { "$type": "color", "$value": "{color.action.primary.background}" },
+      "selectedForeground": { "$type": "color", "$value": "{color.action.primary.foreground}" },
+      "border": { "$type": "color", "$value": "{color.border.strong}" },
+      "target": { "$type": "dimension", "$value": "{dimension.control.md}" }
+    },
+    "card": {
+      "background": { "$type": "color", "$value": "{color.surface.raised}" },
+      "foreground": { "$type": "color", "$value": "{color.content.primary}" },
+      "border": { "$type": "color", "$value": "{color.border.default}" },
+      "radius": { "$type": "dimension", "$value": "{dimension.radius.lg}" },
+      "padding": { "$type": "dimension", "$value": "{dimension.space.6}" },
+      "gap": { "$type": "dimension", "$value": "{dimension.space.4}" }
+    },
+    "badge": {
+      "radius": { "$type": "dimension", "$value": "{dimension.radius.pill}" },
+      "paddingInline": { "$type": "dimension", "$value": "{dimension.space.2}" },
+      "height": { "$type": "dimension", "$value": "{dimension.space.6}" }
+    },
+    "navigation": {
+      "background": { "$type": "color", "$value": "{color.surface.raised}" },
+      "foreground": { "$type": "color", "$value": "{color.content.secondary}" },
+      "activeForeground": { "$type": "color", "$value": "{color.content.primary}" },
+      "activeBackground": { "$type": "color", "$value": "{color.brand.accentSoft}" },
+      "itemHeight": { "$type": "dimension", "$value": "{dimension.control.lg}" }
+    },
+    "table": {
+      "background": { "$type": "color", "$value": "{color.surface.raised}" },
+      "headerBackground": { "$type": "color", "$value": "{color.surface.subtle}" },
+      "border": { "$type": "color", "$value": "{color.border.default}" },
+      "rowMinHeight": { "$type": "dimension", "$value": "{dimension.control.md}" }
+    },
+    "chat": {
+      "incomingBackground": { "$type": "color", "$value": "{color.surface.subtle}" },
+      "outgoingBackground": { "$type": "color", "$value": "{color.brand.accentSoft}" },
+      "messageRadius": { "$type": "dimension", "$value": "{dimension.radius.lg}" },
+      "composerMinHeight": { "$type": "dimension", "$value": "{dimension.control.lg}" }
+    },
+    "domain": {
+      "visitCardGap": { "$type": "dimension", "$value": "{dimension.space.3}" },
+      "routeStopTarget": { "$type": "dimension", "$value": "{dimension.control.lg}" },
+      "sharedPlanAccent": { "$type": "color", "$value": "{color.brand.accent}" },
+      "offlineBackground": { "$type": "color", "$value": "{color.state.warning.background}" },
+      "offlineForeground": { "$type": "color", "$value": "{color.state.warning.foreground}" }
+    }
+  }
+}

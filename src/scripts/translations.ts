@@ -14,6 +14,7 @@ export const spanishTranslations: Record<string, string> = {
   "Explorar": "Explorar",
   "Identitat": "Identidad",
   "Pantalles clau": "Pantallas clave",
+  "Sistema rosa": "Sistema rosa",
   "Estat": "Estado",
   "Exploració activa": "Exploración activa",
   "Canvia de ruta a dalt. El contingut no es mou; només canvia el sistema visual.":
@@ -97,6 +98,34 @@ export const spanishTranslations: Record<string, string> = {
   "Espai i forma": "Espacio y forma",
   "Escala de 4 punts amb densitat adaptada al context.":
     "Escala de 4 puntos con densidad adaptada al contexto.",
+  "Sistema aprovat · v0.1": "Sistema aprobado · v0.1",
+  "Precisió rosa ja és una especificació.": "Precisión rosa ya es una especificación.",
+  "Les altres rutes continuen disponibles per comparar. Aquesta és la base compartida que s'ha d'utilitzar per dissenyar i implementar ARRELS360.":
+    "Las otras rutas continúan disponibles para comparar. Esta es la base compartida que debe utilizarse para diseñar e implementar ARRELS360.",
+  "Paleta rosa aprovada": "Paleta rosa aprobada",
+  "Identitat i accent visual": "Identidad y acento visual",
+  "Acció": "Acción",
+  "Text blanc · WCAG AA": "Texto blanco · WCAG AA",
+  "Suau": "Suave",
+  "Selecció i agrupació": "Selección y agrupación",
+  "Marca dark": "Marca dark",
+  "Accent sobre fons fosc": "Acento sobre fondo oscuro",
+  "Parell d'acció autoritzat": "Par de acción autorizado",
+  "Acció principal": "Acción principal",
+  "El rosa de marca i el rosa d'acció són intencionadament diferents. Així mantenim una identitat viva sense sacrificar la lectura.":
+    "El rosa de marca y el rosa de acción son intencionadamente diferentes. Así mantenemos una identidad viva sin sacrificar la lectura.",
+  "Color, tipografia, espai, forma, moviment, densitat i responsive.":
+    "Color, tipografía, espacio, forma, movimiento, densidad y responsive.",
+  "Primitives, rols semàntics light/dark i decisions de component.":
+    "Primitivos, roles semánticos light/dark y decisiones de componente.",
+  "Contractes d'accions, formularis, dades, navegació, overlays i domini.":
+    "Contratos de acciones, formularios, datos, navegación, overlays y dominio.",
+  "Visites, rutes, evidències, incidències, permisos, offline i chat.":
+    "Visitas, rutas, evidencias, incidencias, permisos, offline y chat.",
+  "Paquet ARRELS360 Pink v0.1": "Paquete ARRELS360 Pink v0.1",
+  "Documentació, tokens JSON i instruccions per a Claude.":
+    "Documentación, tokens JSON e instrucciones para Claude.",
+  "Descarregar paquet": "Descargar paquete",
   "El caràcter en ús.": "El carácter en uso.",
   "No són paquets d'implementació. Són espècimens visuals per decidir forma, densitat, contrast i comportament.":
     "No son paquetes de implementación. Son especímenes visuales para decidir forma, densidad, contraste y comportamiento.",
