@@ -5,15 +5,6 @@ import '../tokens/arrels_spacing.dart';
 import 'arrels_colors.dart';
 import 'arrels_text_styles.dart';
 
-/// Rounded rectangle shape at the given [radius], reused across the
-/// button/card/dialog theme defaults below.
-RoundedRectangleBorder _shape(double radius, [BorderSide side = BorderSide.none]) {
-  return RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(radius),
-    side: side,
-  );
-}
-
 /// Builds the app-level [ThemeData] for light/dark, registering
 /// [ArrelsColors] as a [ThemeExtension] so every `Arrels*` component (and
 /// any app screen) can read semantic colors via `context.arrelsColors`.
@@ -101,68 +92,6 @@ abstract final class ArrelsTheme {
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: colors.dangerForeground),
         ),
-      ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: colors.actionPrimaryBackground,
-          foregroundColor: colors.actionPrimaryForeground,
-          disabledBackgroundColor: colors.actionPrimaryDisabled,
-          minimumSize: const Size(0, ArrelsControlSize.md),
-          shape: _shape(ArrelsRadius.md),
-          textStyle: ArrelsTextStyles.label,
-        ),
-      ),
-      filledButtonTheme: FilledButtonThemeData(
-        style: FilledButton.styleFrom(
-          backgroundColor: colors.actionPrimaryBackground,
-          foregroundColor: colors.actionPrimaryForeground,
-          disabledBackgroundColor: colors.actionPrimaryDisabled,
-          minimumSize: const Size(0, ArrelsControlSize.md),
-          shape: _shape(ArrelsRadius.md),
-          textStyle: ArrelsTextStyles.label,
-        ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          foregroundColor: colors.actionSecondaryForeground,
-          backgroundColor: colors.actionSecondaryBackground,
-          minimumSize: const Size(0, ArrelsControlSize.md),
-          side: BorderSide(color: colors.actionSecondaryBorder),
-          shape: _shape(ArrelsRadius.md),
-          textStyle: ArrelsTextStyles.label,
-        ),
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          foregroundColor: colors.contentPrimary,
-          minimumSize: const Size(0, ArrelsControlSize.md),
-          shape: _shape(ArrelsRadius.md),
-          textStyle: ArrelsTextStyles.label,
-        ),
-      ),
-      cardTheme: CardThemeData(
-        color: colors.surfaceRaised,
-        elevation: 0,
-        margin: EdgeInsets.zero,
-        shape: _shape(ArrelsRadius.lg, BorderSide(color: colors.borderDefault)),
-      ),
-      dialogTheme: DialogThemeData(
-        backgroundColor: colors.surfaceRaised,
-        shape: _shape(ArrelsRadius.lg),
-      ),
-      appBarTheme: AppBarTheme(
-        backgroundColor: colors.surfaceRaised,
-        foregroundColor: colors.contentPrimary,
-        elevation: 0,
-        surfaceTintColor: Colors.transparent,
-      ),
-      snackBarTheme: SnackBarThemeData(
-        backgroundColor: colors.surfaceInverse,
-        contentTextStyle: ArrelsTextStyles.bodySmall.copyWith(
-          color: colors.contentInverse,
-        ),
-        shape: _shape(ArrelsRadius.md),
-        behavior: SnackBarBehavior.floating,
       ),
     );
   }

@@ -1,3 +1,13 @@
+## 0.1.2
+
+* Reverted the 0.1.1 Material widget theming (`elevatedButtonTheme`,
+  `dialogTheme`, `cardTheme`, `appBarTheme`, `snackBarTheme`, etc.). It papered
+  over consuming apps still using raw `ElevatedButton`/`AlertDialog`/`Card`
+  instead of `ArrelsButton`/`ArrelsDialog`/`ArrelsCard`. `ArrelsTheme` is
+  intentionally back to only colors, text styles and `InputDecorationTheme` —
+  a plain Material widget rendering unstyled is a signal to swap it for the
+  matching `Arrels*` component, not something to theme away.
+
 ## 0.1.1
 
 * `ArrelsTheme` now also themes the standard Material widgets (`ElevatedButton`,
