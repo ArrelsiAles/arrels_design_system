@@ -1,3 +1,9 @@
+## 0.1.3
+
+* `ArrelsTextField` gains `initialValue` (like `TextFormField.initialValue`)
+  for the common BLoC pattern of a stateless edit form seeded from cubit
+  state with no controller. Internally now built on `TextFormField`.
+
 ## 0.1.2
 
 * Reverted the 0.1.1 Material widget theming (`elevatedButtonTheme`,

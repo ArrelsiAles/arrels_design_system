@@ -12,6 +12,7 @@ class ArrelsTextField extends StatelessWidget {
   const ArrelsTextField({
     super.key,
     this.controller,
+    this.initialValue,
     this.label,
     this.placeholder,
     this.helper,
@@ -30,6 +31,10 @@ class ArrelsTextField extends StatelessWidget {
   });
 
   final TextEditingController? controller;
+
+  /// Seeds the field once, like [TextFormField.initialValue]. Mutually
+  /// exclusive with [controller].
+  final String? initialValue;
   final String? label;
   final String? placeholder;
   final String? helper;
@@ -61,8 +66,9 @@ class ArrelsTextField extends StatelessWidget {
       counter: maxLength != null ? '$length/$maxLength' : null,
       child: SizedBox(
         height: maxLines == 1 ? ArrelsControlSize.md : null,
-        child: TextField(
+        child: TextFormField(
           controller: controller,
+          initialValue: initialValue,
           enabled: enabled,
           readOnly: readOnly,
           obscureText: obscureText,
