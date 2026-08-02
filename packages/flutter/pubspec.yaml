@@ -1,6 +1,6 @@
 name: arrels_design_system_flutter
 description: "ARRELS360 design system for Flutter — tokens, theme and Arrels* components shared across admin, worker and family apps."
-version: 0.1.0
+version: 0.1.1
 homepage:
 publish_to: "none"
 
